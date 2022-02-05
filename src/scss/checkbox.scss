@@ -1,0 +1,10 @@
+.react-component__checkbox{
+    display: inline-flex;
+    align-items: center;
+
+    &__input{
+        margin-left: 4px;
+        min-height: 0px;
+        cursor: pointer;
+    }
+}

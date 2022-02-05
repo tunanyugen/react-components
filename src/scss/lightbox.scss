@@ -1,0 +1,122 @@
+.react-component__lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+    transition: .5s;
+    z-index: 999;
+    &.show{
+        opacity: 1;
+        transition: .25s;
+    }
+    &.hide{
+        opacity: 0;
+        transition: .25s;
+        pointer-events: none;
+    }
+    &__medias{
+        position: relative;
+        width: 100%;
+        height: calc(100% - 200px);
+        margin: 30px 0px;
+        text-align: center;
+    }
+    &__media{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 70%;
+        max-height: 100%;
+        &.show{ animation: show .5s forwards; }
+        &.hide{ animation: hide .5s forwards; }
+        &.iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__previews{
+        display: flex;
+        width: 70%;
+        height: 120px;
+        margin: 0 auto;
+        overflow: hidden;
+        cursor: pointer;
+        & > div{
+            display: flex;
+        }
+    }
+    &__preview{
+        width: 200px;
+        height: 120px;
+        transition: .25s;
+        object-fit: cover;
+        &+&{
+            margin-left: 10px;
+        }
+        &:hover, &.active{
+            filter: brightness(0.53);
+        }
+    }
+    &__index{
+        position: absolute;
+        left: 4px;
+        bottom: 4px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+    &__next, &__back, &__close{
+        position: absolute;
+        min-width: 40px;
+        min-height: 40px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: .25s;
+        &:hover{
+            backdrop-filter: brightness(1.5);
+        }
+    }
+    &__next{
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__back{
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__close{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+    @keyframes show{
+        0%{
+            opacity: 0;
+            left: 100%;
+        }
+        100%{
+            opacity: 1;
+            left: 50%;
+        }
+    }
+    @keyframes hide{
+        0%{
+            opacity: 1;
+            left: 50%;
+        }
+        100% {
+            opacity: 0;
+            left: -100%;
+        }
+    }
+}

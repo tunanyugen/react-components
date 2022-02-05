@@ -1,0 +1,19 @@
+.react-component__sortable{
+    position: relative;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__buttons{
+        display: flex;
+        margin-top: 4px;
+    }
+    &__filter{
+        position: unset;
+        width: 80px;
+        margin-left: 4px;
+    }
+    .react-component__tag{
+        user-select: none;
+    }
+}

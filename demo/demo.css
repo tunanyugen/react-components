@@ -1,0 +1,662 @@
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \***************************************************************************************************************************************************/
+.react-component__form {
+  position: relative;
+}
+.react-component__form__input {
+  position: relative;
+  width: 100%;
+}
+.react-component__form__input__wrapper {
+  position: relative;
+}
+.react-component__form__input.error input, .react-component__form__input.error textarea {
+  border: 1px solid red;
+}
+.react-component__form__input input {
+  min-height: 27px;
+}
+.react-component__form__input + .react-component__form__input {
+  margin-top: 8px;
+}
+
+.react-component__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+.react-component__data-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  max-height: 50vh;
+  z-index: 100;
+  transition: 0.25s;
+}
+.react-component__data-list.collapsed {
+  opacity: 0;
+  pointer-events: none;
+}
+.react-component__data-list__wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 4px;
+  background: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.25s;
+}
+.react-component__data-list__item {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.react-component__data-list__item:hover {
+  -webkit-backdrop-filter: brightness(0.96);
+          backdrop-filter: brightness(0.96);
+}
+
+.react-component__select {
+  position: relative;
+  width: 100%;
+}
+
+.react-component__tag {
+  display: inline-flex;
+  align-items: center;
+  margin: 2px;
+  border: 1px solid #d4d4d4;
+}
+.react-component__tag__text {
+  margin: 0 4px 0 0;
+}
+.react-component__tag__delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: auto;
+  border: 1px solid #dedede;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.react-component__tag__delete:hover {
+  filter: brightness(0.5);
+}
+
+.react-component__tag-input {
+  position: relative;
+}
+.react-component__tag-input__wrapper {
+  display: flex;
+  align-items: center;
+}
+.react-component__tag-input__tags {
+  position: relative;
+  align-items: center;
+  flex: 0 0 60%;
+  min-height: 27px;
+  border: 1px solid black;
+}
+.react-component__tag-input.error .react-component__tag-input__tags {
+  border: 1px solid red;
+}
+.react-component__tag-input__filter, .react-component__tag-input__clear {
+  margin-left: 4px;
+}
+.react-component__tag-input__buttons {
+  display: flex;
+  flex: 0 0 40%;
+  margin-top: auto;
+}
+.react-component__tag-input__filter {
+  position: unset;
+  flex: 0 0 calc(100% - 40px - 14px);
+}
+.react-component__tag-input__clear {
+  flex: 0 0 40px;
+}
+
+.react-component__checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+.react-component__checkbox__input {
+  margin-left: 4px;
+  min-height: 0px;
+  cursor: pointer;
+}
+
+.react-component__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 27px;
+  transition: 0.25s;
+}
+.react-component__button img, .react-component__button svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.react-component__button * {
+  pointer-events: none;
+}
+
+.react-component__ckeditor__content {
+  position: relative;
+  border: 1px solid #d4d4d4;
+  height: 55vh;
+}
+
+.ck-editor__editable_inline {
+  height: 100%;
+}
+
+.ck-dropdown__panel {
+  overflow: visible !important;
+}
+
+.ck-list {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.react-component__media-input {
+  position: relative;
+}
+.react-component__media-input__wrapper {
+  display: flex;
+  align-items: center;
+}
+.react-component__media-input__browse, .react-component__media-input__preview {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+.react-component__multi-media-input {
+  position: relative;
+}
+.react-component__multi-media-input__inputs {
+  transition: 0.25s;
+}
+.react-component__multi-media-input__input {
+  display: flex;
+  align-items: center;
+}
+.react-component__multi-media-input__input__remove {
+  min-width: 30px;
+  margin-left: 4px;
+}
+.react-component__multi-media-input__buttons {
+  display: flex;
+  margin-top: 4px;
+}
+.react-component__multi-media-input__browser, .react-component__multi-media-input__preview, .react-component__multi-media-input__clear, .react-component__multi-media-input__add {
+  min-width: 30px;
+}
+.react-component__multi-media-input__preview, .react-component__multi-media-input__clear, .react-component__multi-media-input__add {
+  margin-left: 4px;
+}
+
+.react-component__lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.87);
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 999;
+}
+.react-component__lightbox.show {
+  opacity: 1;
+  transition: 0.25s;
+}
+.react-component__lightbox.hide {
+  opacity: 0;
+  transition: 0.25s;
+  pointer-events: none;
+}
+.react-component__lightbox__medias {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 200px);
+  margin: 30px 0px;
+  text-align: center;
+}
+.react-component__lightbox__media {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 100%;
+}
+.react-component__lightbox__media.show {
+  -webkit-animation: show 0.5s forwards;
+          animation: show 0.5s forwards;
+}
+.react-component__lightbox__media.hide {
+  -webkit-animation: hide 0.5s forwards;
+          animation: hide 0.5s forwards;
+}
+.react-component__lightbox__media.iframe {
+  width: 100%;
+  height: 100%;
+}
+.react-component__lightbox__previews {
+  display: flex;
+  width: 70%;
+  height: 120px;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.react-component__lightbox__previews > div {
+  display: flex;
+}
+.react-component__lightbox__preview {
+  width: 200px;
+  height: 120px;
+  transition: 0.25s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.react-component__lightbox__preview + .react-component__lightbox__preview {
+  margin-left: 10px;
+}
+.react-component__lightbox__preview:hover, .react-component__lightbox__preview.active {
+  filter: brightness(0.53);
+}
+.react-component__lightbox__index {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.react-component__lightbox__next, .react-component__lightbox__back, .react-component__lightbox__close {
+  position: absolute;
+  min-width: 40px;
+  min-height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.react-component__lightbox__next:hover, .react-component__lightbox__back:hover, .react-component__lightbox__close:hover {
+  -webkit-backdrop-filter: brightness(1.5);
+          backdrop-filter: brightness(1.5);
+}
+.react-component__lightbox__next {
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.react-component__lightbox__back {
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.react-component__lightbox__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    left: 100%;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    left: 100%;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+    left: 50%;
+  }
+  100% {
+    opacity: 0;
+    left: -100%;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+    left: 50%;
+  }
+  100% {
+    opacity: 0;
+    left: -100%;
+  }
+}
+
+.react-component__table {
+  transition: 0.25s;
+}
+.react-component__table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+.react-component__table table thead {
+  font-weight: bold;
+}
+.react-component__table table thead tr {
+  border-bottom: 1px solid #e8e8e8;
+}
+.react-component__table table tr {
+  height: 30px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.react-component__table table th, .react-component__table table td {
+  padding: 4px;
+  min-height: 30px;
+  text-align: start;
+}
+
+.react-component__pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding: 4px 0px;
+  font-size: 12px;
+}
+.react-component__pagination__filler {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 27px;
+  height: 27px;
+  letter-spacing: 3px;
+  pointer-events: none;
+}
+.react-component__pagination__item {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.react-component__pagination__item:hover {
+  filter: brightness(0.75);
+  transition: 0.25s;
+}
+.react-component__pagination__item.active {
+  filter: brightness(0.75);
+}
+.react-component__pagination__item + .react-component__pagination__item {
+  margin-left: 4px;
+}
+
+.react-component__side-menu {
+  width: 100%;
+  height: 100%;
+  padding: 8px 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.25s;
+}
+.react-component__side-menu__logo {
+  width: 100%;
+  text-align: center;
+}
+.react-component__side-menu__logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.react-component__side-menu__main-items {
+  text-align: center;
+}
+.react-component__side-menu__main-item {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+.react-component__side-menu__main-item__icon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+.react-component__side-menu__main-item__icon img {
+  width: 100%;
+  height: 100%;
+}
+.react-component__side-menu__item__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 4px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.react-component__side-menu__item__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 14px;
+  padding: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.react-component__side-menu__item__icon {
+  height: 14px;
+  margin: 4px;
+}
+.react-component__side-menu__item__name {
+  margin: 0;
+  white-space: nowrap;
+}
+.react-component__side-menu__item__children {
+  transition: 0.25s;
+  overflow: hidden;
+}
+
+.react-component__toggler {
+  height: 27px;
+  width: 46px;
+  border-radius: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.react-component__toggler.active .react-component__toggler__handle {
+  left: 100%;
+  transform: translateX(calc(-100% - 4px * 1.5));
+}
+.react-component__toggler__handle {
+  position: absolute;
+  border-radius: 50%;
+  width: calc(27px * 0.8 - 4px);
+  height: calc(27px * 0.8 - 4px);
+  background-color: white;
+  top: 4px;
+  left: calc(4px * 1.5);
+  transform: translateX(0);
+  transition: 0.25s;
+}
+
+.react-component__context-menu {
+  display: inline-block;
+}
+.react-component__context-menu.hide {
+  opacity: 0;
+  height: 0;
+  pointer-events: none;
+}
+.react-component__context-menu__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+}
+.react-component__context-menu__item:hover {
+  -webkit-backdrop-filter: brightness(0.67);
+          backdrop-filter: brightness(0.67);
+}
+.react-component__context-menu__item__icon {
+  height: 100%;
+}
+.react-component__context-menu__item__name {
+  display: flex;
+  align-items: center;
+  margin: 8px 0px 8px 10px;
+}
+.react-component__context-menu__item__context-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.react-component__error {
+  position: absolute;
+  right: 8px;
+  bottom: 50%;
+  width: 14px;
+  height: 14px;
+  background: red;
+  transform: translateY(50%);
+  z-index: 90;
+  cursor: pointer;
+}
+.react-component__error__popup {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 4px);
+  transform: translateY(-50%);
+}
+.react-component__error__popup.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.react-component__text-area textarea {
+  width: 100%;
+  height: 50vh;
+}
+
+.react-component__sortable {
+  position: relative;
+}
+.react-component__sortable__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.react-component__sortable__buttons {
+  display: flex;
+  margin-top: 4px;
+}
+.react-component__sortable__filter {
+  position: unset;
+  width: 80px;
+  margin-left: 4px;
+}
+.react-component__sortable .react-component__tag {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.react-component__media-select.error .react-component__media-select__wrapper {
+  border: 1px solid red;
+}
+.react-component__media-select__wrapper {
+  display: grid;
+  overflow-y: auto;
+  grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
+}
+.react-component__labeled-media-select.error .react-component__labeled-media-select__wrapper {
+  border: 1px solid red;
+}
+.react-component__labeled-media-select__wrapper {
+  display: grid;
+  overflow-y: auto;
+  grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
+}
+.react-component__labeled-media-select__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.react-component__slider__label-wrapper {
+  display: flex;
+}
+.react-component__slider__value {
+  margin-left: auto;
+}
+
+.react-component__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.react-component__popup.show {
+  opacity: 1;
+  transition: 0.25s;
+}
+.react-component__popup.hide {
+  opacity: 0;
+  transition: 0.25s;
+  pointer-events: none;
+}
+
+.react-component__optional__container {
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+* {
+  box-sizing: border-box;
+}

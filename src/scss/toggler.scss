@@ -1,0 +1,30 @@
+.react-component__toggler{
+    $height:27px;
+    $padding:4px;
+
+    height: $height;
+    width: 46px;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    &.active &__handle{
+        left: 100%;
+        transform: translateX(calc(-100% - #{$padding} * 1.5));
+    }
+    &.active{
+        
+    }
+    &__handle{
+        position: absolute;
+        border-radius: 50%;
+        width: calc(#{$height} * 0.8 - #{$padding});
+        height: calc(#{$height} * 0.8 - #{$padding});
+        background-color: white;
+        top: $padding;
+        left: calc(#{$padding} * 1.5);
+        transform: translateX(0);
+        transition: .25s;
+    }
+}

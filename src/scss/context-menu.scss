@@ -1,0 +1,34 @@
+.react-component__context-menu {
+  display: inline-block;
+  &.hide {
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+  }
+  &__item {
+    $height: 30px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: $height;
+    cursor: pointer;
+
+    &:hover {
+      backdrop-filter: brightness(0.67);
+    }
+    &__icon {
+      height: 100%;
+    }
+    &__name {
+      display: flex;
+      align-items: center;
+      margin: 8px 0px 8px 10px;
+    }
+    &__context-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.react-component__error{
+    position: absolute;
+    right: 8px;
+    bottom: 50%;
+    width: 14px;
+    height: 14px;
+    background: red;
+    transform: translateY(50%);
+    z-index: 90;
+    cursor: pointer;
+    &__popup{
+        position: absolute;
+        top: 50%;
+        right: calc(100% + 4px);
+        transform: translateY(-50%);
+        &.hide{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}

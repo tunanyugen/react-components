@@ -1,0 +1,31 @@
+.react-component__data-list{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    max-height: 50vh;
+    z-index: 100;
+    transition: .25s;
+    &.collapsed{
+        opacity: 0;
+        pointer-events: none;
+    }
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        margin-top: 4px;
+        background: white;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: .25s;
+    }
+    &__item{
+        width: 100%;
+        height: 30px;
+        cursor: pointer;
+        transition: .25s;
+        &:hover{
+            backdrop-filter: brightness(0.96);
+        }
+    }
+}

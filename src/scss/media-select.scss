@@ -1,0 +1,13 @@
+.react-component__media-select{
+    &.error &__wrapper{
+        border: 1px solid red;
+    }
+    &__wrapper{
+        display: grid;
+        overflow-y: auto;
+        grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
+    }
+    &__item{
+        
+    }   
+}

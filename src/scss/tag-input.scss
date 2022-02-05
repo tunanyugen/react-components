@@ -1,0 +1,32 @@
+.react-component__tag-input{
+    position: relative;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__tags{
+        position: relative;
+        align-items: center;
+        flex: 0 0 60%;
+        min-height: 27px;
+        border: 1px solid black;
+    }
+    &.error &__tags{
+        border: 1px solid red;
+    }
+    &__filter, &__clear{
+        margin-left: 4px;
+    }
+    &__buttons{
+        display: flex;
+        flex: 0 0 40%;
+        margin-top: auto;
+    }
+    &__filter{
+        position: unset;
+        flex: 0 0 calc(100% - 40px - 14px);
+    }
+    &__clear{
+        flex: 0 0 40px;
+    }
+}

@@ -1,0 +1,24 @@
+.react-component__multi-media-input{
+    position: relative;
+    &__inputs{
+        transition: .25s;
+    }
+    &__input{
+        display: flex;
+        align-items: center;
+        &__remove{
+            min-width: 30px;
+            margin-left: 4px;
+        }
+    }
+    &__buttons{
+        display: flex;
+        margin-top: 4px;
+    }
+    &__browser, &__preview, &__clear, &__add{
+        min-width: 30px;
+    }
+    &__preview, &__clear, &__add{
+        margin-left: 4px;
+    }
+}

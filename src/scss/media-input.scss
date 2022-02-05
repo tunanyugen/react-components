@@ -1,0 +1,12 @@
+.react-component__media-input{
+    position: relative;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__browse, &__preview{
+        width: max-content;
+        margin-left: 4px;
+        white-space: nowrap;
+    }
+}

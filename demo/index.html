@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/demo.css">
+    <title>Input</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://ckeditor.com/apps/ckfinder/3.5.0/ckfinder.js"></script>
+    <script>
+        window.CKFinder = CKFinder;
+        function selectFileWithCKFinder(onSelect) {
+            CKFinder.popup({
+                chooseFiles: true,
+                width: 800,
+                height: 600,
+                onInit: function (finder) {
+                    finder.on("files:choose", function (evt) {
+                        onSelect(evt.data.files.models.map((model) => {
+                            return model.getUrl();
+                        }));
+                    });
+                    finder.on("file:choose:resizedImage", function (evt) {
+                        input.value = evt.data.resizedUrl;
+                        onSelect(file.getUrl());
+                    });
+                },
+            });
+        }
+    </script>
+    <script src="/static/demo.js"></script>
+</body>
+</html>

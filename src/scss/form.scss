@@ -1,0 +1,21 @@
+.react-component__form{
+    position: relative;
+    &__input{
+        position: relative;
+        width: 100%;
+        &__wrapper{
+            position: relative;
+        }
+        &.error{
+            input, textarea{
+                border: 1px solid red;
+            }
+        }
+        input {
+            min-height: 27px;
+        }
+        &+&{
+            margin-top: 8px;
+        }
+    }
+}

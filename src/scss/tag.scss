@@ -1,0 +1,26 @@
+.react-component__tag{
+
+    display: inline-flex;
+    align-items: center;
+    margin: 2px;
+    border: 1px solid #d4d4d4;
+    &__text{
+        margin: 0 4px 0 0;
+    }
+    &__delete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-left: auto;
+        border: 1px solid #dedede;
+        font-size: 10px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        transition: .25s;
+        &:hover{
+            filter: brightness(0.5);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.react-component__ckeditor{
+    &__toolbar{}
+    &__content{
+        position: relative;
+        border: 1px solid #d4d4d4;
+        height: 55vh;
+    }
+}
+.ck-editor__editable_inline {
+    height: 100%;
+}
+.ck-dropdown__panel{
+    overflow: visible !important;
+}
+.ck-list{
+    max-height: 50vh;
+    overflow-y: auto;
+}
